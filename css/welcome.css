@@ -1,0 +1,69 @@
+/*Regras gerais da primeira parte do site*/
+.firstpage {
+	background-color: rgb(235, 235, 235);
+	text-align: center;
+	display: inline-block;
+	height: 580px;
+	width: 100%;
+}
+/*Regras do título principal do site*/
+.hello   {
+	color: black;
+	font-family: 'Krona One', sans-serif;
+	font-size: 60px; 
+	font-style: normal; 
+	font-variant: normal;
+	padding: 20px;
+}
+/*Regras da div imagem*/
+.img {
+	padding-bottom: 60px;
+}
+/*Regras do background do subtítulo*/
+.subtitlebg {
+	background-color: dodgerblue;
+	width: 500px;
+	height: 70px;
+	margin: 0 auto;
+	display: inline-block;
+	border-style: hidden;
+	border-radius: 10px;
+}
+/*Regras do subtítulo*/
+.subtitle {
+	color: white;
+	font-family: 'Jura', sans-serif;
+	font-style: italic;
+	font-size: 22px;
+	border-right: 2px solid rgb(255, 255, 255);
+	width: 410px;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	
+}
+.typing_animation {
+	animation: digitar 5s steps(40) 5s infinite normal,
+	piscarcursor 400ms infinite normal;
+}
+/*Piscar o cursor do subtítulo*/
+@keyframes piscarcursor {
+	from {
+		border-right-color: rgb(255, 255, 255);
+	}
+	to {
+		border-right-color: transparent;
+	}
+}
+/*Efeito de digitação*/
+@keyframes digitar {
+	0% {
+		width: 0;
+	}
+	50% {
+		width: 410px;
+	}
+	100% {
+		width: 1;
+	}
+}

@@ -1,0 +1,50 @@
+/*Formatação da estrutura básica do site*/
+body, ul, li, a{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+/*Regras do cabeçalho do site*/
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color:rgb(41, 41, 46);;
+	width: 100%;
+	height: 50px;
+}
+/*Regras da logo do cabeçalho (lado direito)*/
+.logo {
+	color: #FFFF00;
+	font-family: 'Krona One', sans-serif;
+	font-size: 24px; 
+	font-style: normal; 
+	font-variant: normal;	
+	padding: 50px;
+	float: left;
+	width: 200px;
+}
+/*Regras dos elementos que compoem o lado esquerdo do cabeçalho*/
+nav {
+	padding: 35px;
+}
+ul {
+	display: flex;
+}
+a {
+	color: white;
+	font-family: 'Jura', sans-serif;
+	font-size: 16px; 
+	font-style: normal; 
+	font-variant: normal;
+	padding: 12px;
+}
+/*Mudanças ao passar o mouse em cima*/
+a:hover {
+	cursor: pointer;
+	color: yellow;
+}
